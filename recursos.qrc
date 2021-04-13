@@ -3,5 +3,9 @@
         <file>recursos/agregar.ico</file>
         <file>recursos/salir.png</file>
         <file>recursos/refrescar.png</file>
+        <file>recursos/eliminar.png</file>
+        <file>recursos/facturar.png</file>
+        <file>recursos/modificar.png</file>
+        <file>recursos/costos.png</file>
     </qresource>
 </RCC>

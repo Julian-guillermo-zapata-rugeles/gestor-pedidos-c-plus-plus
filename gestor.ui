@@ -142,11 +142,14 @@
     </item>
     <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>1</number>
+      </property>
       <property name="topMargin">
-       <number>10</number>
+       <number>0</number>
       </property>
       <property name="bottomMargin">
-       <number>10</number>
+       <number>0</number>
       </property>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
@@ -164,27 +167,50 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btn_nuevo">
-          <property name="minimumSize">
-           <size>
-            <width>80</width>
-            <height>50</height>
-           </size>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="rightMargin">
+           <number>0</number>
           </property>
-          <property name="maximumSize">
-           <size>
-            <width>80</width>
-            <height>50</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/recursos/agregar.ico);
+          <item>
+           <widget class="QPushButton" name="btn_nuevo">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/recursos/agregar.ico);
 height:40px;</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(66, 128, 116);
+color:white;
+font:bold;
+padding-left:10px;
+padding-right:10px;
+font-size:8px;
+text-align:</string>
+            </property>
+            <property name="text">
+             <string>REGISTRAR</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <spacer name="horizontalSpacer_3">
@@ -200,15 +226,47 @@ height:40px;</string>
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btn_pendiente">
-          <property name="styleSheet">
-           <string notr="true">width:20%;
-height:40px;</string>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="rightMargin">
+           <number>0</number>
           </property>
-          <property name="text">
-           <string>PENDIENTES</string>
+          <property name="bottomMargin">
+           <number>0</number>
           </property>
-         </widget>
+          <item>
+           <widget class="QPushButton" name="btn_pendiente">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width:20%;
+border-image: url(:/recursos/eliminar.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(66, 128, 116);
+color:white;
+font:bold;
+padding-left:10px;
+padding-right:10px;
+font-size:8px;
+text-align:</string>
+            </property>
+            <property name="text">
+             <string>ELIMINAR</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <spacer name="horizontalSpacer_4">
@@ -224,15 +282,44 @@ height:40px;</string>
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btn_finalizados">
-          <property name="styleSheet">
-           <string notr="true">width:20%;
-height:40px;</string>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="rightMargin">
+           <number>0</number>
           </property>
-          <property name="text">
-           <string>FINALIZADOS</string>
-          </property>
-         </widget>
+          <item>
+           <widget class="QPushButton" name="btn_finalizados">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width:20%;
+border-image: url(:/recursos/modificar.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(66, 128, 116);
+color:white;
+font:bold;
+padding-left:10px;
+padding-right:10px;
+font-size:8px;
+text-align:</string>
+            </property>
+            <property name="text">
+             <string>MODIFICAR</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <spacer name="horizontalSpacer_5">
@@ -248,15 +335,45 @@ height:40px;</string>
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btn_costos">
-          <property name="styleSheet">
-           <string notr="true">width:20%;
-height:40px;</string>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="rightMargin">
+           <number>0</number>
           </property>
-          <property name="text">
-           <string>COSTOS</string>
-          </property>
-         </widget>
+          <item>
+           <widget class="QPushButton" name="btn_costos">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width:20%;
+border-image: url(:/recursos/costos.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(66, 128, 116);
+color:white;
+font:bold;
+padding-left:10px;
+padding-right:10px;
+font-size:8px;
+text-align:center;
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>COSTOS</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <spacer name="horizontalSpacer_6">
@@ -272,15 +389,45 @@ height:40px;</string>
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btn_productos">
-          <property name="styleSheet">
-           <string notr="true">width:20%;
-height:40px;</string>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="rightMargin">
+           <number>0</number>
           </property>
-          <property name="text">
-           <string>PRODUCTOS</string>
-          </property>
-         </widget>
+          <item>
+           <widget class="QPushButton" name="btn_productos">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width:20%;
+border-image: url(:/recursos/facturar.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(66, 128, 116);
+color:white;
+font:bold;
+padding-left:10px;
+padding-right:10px;
+font-size:8px;
+text-align:center;
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>FACTURA</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <spacer name="horizontalSpacer_7">
@@ -296,28 +443,52 @@ height:40px;</string>
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btn_salir">
-          <property name="minimumSize">
-           <size>
-            <width>70</width>
-            <height>50</height>
-           </size>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="rightMargin">
+           <number>0</number>
           </property>
-          <property name="maximumSize">
-           <size>
-            <width>70</width>
-            <height>50</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">width:20%;
+          <item>
+           <widget class="QPushButton" name="btn_salir">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width:20%;
 border-image: url(:/recursos/salir.png);
 height:40px;</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(66, 128, 116);
+color:white;
+font:bold;
+padding-left:10px;
+padding-right:10px;
+font-size:8px;
+text-align:center;
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>SALIR</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <spacer name="horizontalSpacer_2">
