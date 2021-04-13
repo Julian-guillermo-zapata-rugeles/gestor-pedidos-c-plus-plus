@@ -48,4 +48,5 @@ RESOURCES += \
     recursos.qrc
 
 DISTFILES += \
-    recursos/agregar.ico
+    recursos/agregar.ico \
+    recursos/refrescar.png

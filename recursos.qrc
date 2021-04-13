@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>recursos/agregar.ico</file>
         <file>recursos/salir.png</file>
+        <file>recursos/refrescar.png</file>
     </qresource>
 </RCC>
