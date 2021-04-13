@@ -7,7 +7,7 @@ gestor::gestor(QWidget *parent) :
 {
     ui->setupUi(this);
     gestorArchivos.checkFileExist();
-    ui->textos->setHtml("<center><table border=\"1\" width=\"100%\"> <tr> <th>producto</th> <th>producto</th> <th>producto</th> </tr></table>");
+    ui->textos->setHtml("<center><table border=\"1\" width=\"100%\"> <tr> <th> ID </th> <th> ENTREGA </th>  <th> NOMBRE </th> <th> PRODUCTO </th> <th> CANTIDAD </th> <th> PRECIO C/U </th>  <th> TOTAL </th> </tr></table>");
 }
 
 gestor::~gestor()
