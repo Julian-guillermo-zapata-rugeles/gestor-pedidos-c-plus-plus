@@ -37,7 +37,7 @@ void registros::on_pushButton_clicked()
             +ui->t_precio->toPlainText().replace(" ","_")+" "
             +ui->t_detalles->toPlainText().replace(" ","_")+"\n";
     information = information.replace(".","");
-    information = information.toUpper();
+    information = information.toLower();
     cout << information.toStdString().c_str() << endl;
     bool response=gestorArchivos.writeNewInformation(information);
     if (response==true) {

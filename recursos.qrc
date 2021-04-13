@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/agregar.ico</file>
+        <file>recursos/salir.png</file>
+    </qresource>
+</RCC>
