@@ -14,6 +14,7 @@ public:
     manejador_archivos();
     void checkFileExist();
     bool writeNewInformation(QString complete_line);
+    QString generateTable();
 
 private:
     fstream *file_stream;

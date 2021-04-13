@@ -20,6 +20,8 @@ public:
 private slots:
     void on_btn_nuevo_clicked();
 
+    void on_actualiza_clicked();
+
 private:
     Ui::gestor *ui;
     manejador_archivos gestorArchivos;

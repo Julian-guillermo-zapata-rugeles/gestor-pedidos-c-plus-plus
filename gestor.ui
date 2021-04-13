@@ -97,7 +97,7 @@ height:40px;</string>
       </item>
      </layout>
     </item>
-    <item row="4" column="0">
+    <item row="5" column="0">
      <layout class="QVBoxLayout" name="navegable">
       <property name="sizeConstraint">
        <enum>QLayout::SetDefaultConstraint</enum>
@@ -145,7 +145,7 @@ height:40px;</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
+    <item row="4" column="0">
      <spacer name="verticalSpacer">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -158,7 +158,7 @@ height:40px;</string>
       </property>
      </spacer>
     </item>
-    <item row="5" column="0">
+    <item row="6" column="0">
      <spacer name="verticalSpacer_2">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -170,6 +170,19 @@ height:40px;</string>
        </size>
       </property>
      </spacer>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="actualiza">
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Actualizar</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

@@ -29,10 +29,16 @@ void registros::on_pushButton_clicked()
     short int aleatorio = 10 + rand() % 100 ;
     id = id + QString::number(aleatorio);
 
-    QString information = id + ";" + fecha_elejida +";" + ui->t_name->toPlainText()+";"+ui->t_producto->toPlainText()+";"+ui->t_cantidad->toPlainText()
-            +";"+ui->t_precio->toPlainText()+";"+ui->t_detalles->toPlainText();
-    information = information.replace(" ","_");
-    //cout << information.toStdString().c_str() << endl;
+    QString information = id + " " +
+            fecha_elejida.replace(" ","_") +" " +
+            ui->t_name->toPlainText().replace(" ","_")+" "
+            +ui->t_producto->toPlainText().replace(" ","_")+" "
+            +ui->t_cantidad->toPlainText().replace(" ","_")+" "
+            +ui->t_precio->toPlainText().replace(" ","_")+" "
+            +ui->t_detalles->toPlainText().replace(" ","_")+"\n";
+    information = information.replace(".","");
+    information = information.toUpper();
+    cout << information.toStdString().c_str() << endl;
     bool response=gestorArchivos.writeNewInformation(information);
     if (response==true) {
         this->close();
